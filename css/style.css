@@ -1,0 +1,139 @@
+html {
+    box-sizing: border-box;
+}
+
+*,* ::after, *::before{
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-areas:
+    "side header"
+    "side main" ;
+    grid-template-columns:  125px; 1fr;
+    height: 960px;
+    width:1475px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.img {
+    height: auto;
+    position: absolute;
+    left: 300px;
+    top: 0;
+    
+
+}
+.header{
+    background-color: black;
+}
+
+.basic{
+    margin-left: 88px;
+
+}
+
+h1 {
+    font-size: 128px;
+    line-height: 155px;
+    text-transform: uppercase;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    margin-bottom: 42px;
+}
+
+p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    }
+ .nav{
+    display: block;
+    max-width: 1600px;
+    grid-area: header;
+    margin-bottom: 170px;
+    margin-top: 34px;
+ }
+
+
+.items {
+
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    font: inherit;
+    margin: 0 auto;
+    margin-left: 390px;
+    
+}
+
+.item{
+    margin-right: 73px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+
+}
+
+.side {
+    background-color: #CDC7C7;
+    grid-area: side;
+}
+
+.side_title{
+    writing-mode:vertical-lr;
+}
+
+.main{
+    grid-area: main;
+    position: relative;
+    height: 960px;
+    background-color: black;
+}
+
+.side_title{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 1.25em;
+    margin: 0 auto;
+    color: black;
+}
+
+.tick{
+    width: 67px;
+    height: 23px;
+    margin-top: 34px;
+    margin-left: 32px;
+    margin-right: 26px;
+    margin-bottom: 250px;
+}
+
+.button{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    padding: 22px 39px 21px;
+    border: 0;
+    background-color: #CDC7C7;
+    border-radius: 30px;
+}
